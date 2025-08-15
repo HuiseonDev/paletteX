@@ -1,0 +1,70 @@
+{
+  "name": "vanilla-button-lib",
+  "version": "1.0.0",
+  "description": "customizable button library",
+  "main": "dist/vanilla/index.js",
+  "module": "dist/vanilla/index.esm.js",
+  "types": "dist/vanilla/index.d.ts",
+  "style": "dist/button-library.css",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/react/index.esm.js",
+      "require": "./dist/react/index.js",
+      "types": "./dist/react/index.d.ts"
+    },
+    "./vanilla": {
+      "import": "./dist/vanilla/index.esm.js",
+      "require": "./dist/vanilla/index.js"
+    },
+    "./css": "./dist/button-library.css"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "button",
+    "ui",
+    "component",
+    "vanilla",
+    "javascript",
+    "react",
+    "typescript",
+    "tailwind"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "rollup": "^3.25.0",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.12"
+  }
+}
