@@ -1,4 +1,3 @@
-// src/utils/colorUtils.ts
 export function getContrastColor(hexColor: string): string {
   // #을 제거
   const hex = hexColor.replace("#", "");
