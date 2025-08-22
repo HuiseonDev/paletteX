@@ -10,9 +10,9 @@ export function createButton({
 
   // 클래스 처리
   const sizeClasses = {
-    small: "px-3 py-1 text-sm",
-    medium: "px-4 py-2 text-base",
-    large: "px-6 py-3 text-lg",
+    small: "px-3 py-1 rounded-xs text-sm",
+    medium: "px-4 py-2 rounded-md text-base",
+    large: "px-6 py-3 rounded-lg text-lg",
   };
   btn.className = `rounded ${sizeClasses[size]} ${
     fullWidth ? "w-full" : "inline-flex"
