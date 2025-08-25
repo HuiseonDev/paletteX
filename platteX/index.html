@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vanilla Button Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1>Vanilla Button Test</h1>
+
+    <script type="module">
+      import { Button } from "./dist/vanilla/index.esm.js";
+
+      const btn1 = Button({
+        text: "vanilla button",
+        color: "#3b82f6",
+        size: "small",
+        fullWidth: false,
+      });
+
+      const btn2 = Button({
+        text: "vanilla button",
+        color: "#3b82f6",
+        size: "medium",
+        fullWidth: false,
+      });
+
+      const btn3 = Button({
+        text: "vanilla button",
+        color: "#3b82f6",
+        size: "large",
+        fullWidth: false,
+      });
+
+      document.body.appendChild(btn1);
+      document.body.appendChild(btn2);
+      document.body.appendChild(btn3);
+    </script>
+  </body>
+</html>
